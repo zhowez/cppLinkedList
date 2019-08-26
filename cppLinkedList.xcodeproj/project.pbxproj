@@ -29,9 +29,9 @@
 		49D9FE3E231439050063913B /* View.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = View.cpp; sourceTree = "<group>"; };
 		49D9FE45231439330063913B /* View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
 		49D9FE462314395E0063913B /* Node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
-		49D9FE472314395E0063913B /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		49D9FE472314395E0063913B /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		49D9FE492314396D0063913B /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
-		49D9FE4A2314396D0063913B /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		49D9FE4A2314396D0063913B /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +67,9 @@
 				49D9FE3E231439050063913B /* View.cpp */,
 				49D9FE45231439330063913B /* View.h */,
 				49D9FE462314395E0063913B /* Node.cpp */,
-				49D9FE472314395E0063913B /* Node.hpp */,
+				49D9FE472314395E0063913B /* Node.h */,
 				49D9FE492314396D0063913B /* List.cpp */,
-				49D9FE4A2314396D0063913B /* List.hpp */,
+				49D9FE4A2314396D0063913B /* List.h */,
 			);
 			path = cppLinkedList;
 			sourceTree = "<group>";
