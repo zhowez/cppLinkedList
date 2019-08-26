@@ -12,5 +12,15 @@
 #include <iostream>
 #include "Node.h"
 
+class list {
+public:
+    Node *head;
+    Node *tail;
+    
+    list(int firstData = 0);
+    
+
+};
+
 
 #endif /* List_h */
