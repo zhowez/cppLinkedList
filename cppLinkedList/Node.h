@@ -6,9 +6,16 @@
 //  Copyright © 2019 Zach Howes. All rights reserved.
 //
 
-#ifndef Node_hpp
-#define Node_hpp
+#ifndef Node_h
+#define Node_h
 
-#include <stdio.h>
+#include <iostream>
 
-#endif /* Node_hpp */
+class Node {
+public:
+    Node *forwardLink;
+    Node *backwardLink;
+    int dataPoint;
+};
+
+#endif /* Node_h */

@@ -6,10 +6,17 @@
 //  Copyright © 2019 Zach Howes. All rights reserved.
 //
 
-#include <iostream>
+#include "View.h"
+#include "Node.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    Node theNode;
+    theNode.dataPoint = 2;
+    Node secondNode;
+    theNode.forwardLink = &secondNode;
+    theNode.backwardLink = &secondNode;
+    secondNode.dataPoint = 3;
+    
+    std::cout << theNode.forwardLink->dataPoint;
     return 0;
 }

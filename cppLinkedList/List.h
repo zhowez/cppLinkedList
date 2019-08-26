@@ -6,9 +6,11 @@
 //  Copyright © 2019 Zach Howes. All rights reserved.
 //
 
-#ifndef List_hpp
-#define List_hpp
+#ifndef List_h
+#define List_h
 
-#include <stdio.h>
+#include <iostream>
+#include "Node.h"
 
-#endif /* List_hpp */
+
+#endif /* List_h */

@@ -8,6 +8,7 @@
 
 #ifndef View_h
 #define View_h
+#include <iostream>
 
 
 #endif /* View_h */

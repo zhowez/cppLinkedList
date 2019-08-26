@@ -100,7 +100,7 @@
 		49D9FE33231439050063913B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Zach Howes";
 				TargetAttributes = {
 					49D9FE3A231439050063913B = {
@@ -114,6 +114,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 49D9FE32231439050063913B;
 			productRefGroup = 49D9FE3C231439050063913B /* Products */;
@@ -253,6 +254,7 @@
 		49D9FE43231439050063913B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 488BDNKFC9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,6 +264,7 @@
 		49D9FE44231439050063913B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 488BDNKFC9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
