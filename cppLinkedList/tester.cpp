@@ -7,25 +7,42 @@
 //
 
 #include <iostream>
-#include "List.h"
+#include "ListStack.h"
 
 
 int main(){
-    List<int> tester;
+    
+    
+    ListStack<int> tester;
+    
+    tester.size();
+    
+    for (int i = 0; i < 25; ++i) {
+        tester.push(i);
+    }
+    
+    tester.print("Full Stack");
+    
+    for (int i = 0; i < 25; ++i) {
+        tester.pop();
+        tester.print("Down Stack");
+    }
+    
+    //List<int> tester;
 //    int num = tester.size();
 //    std::cout<< num <<std::endl;
 //    tester.insertStart(5);
 //    num = tester.size();
 //    std::cout<< num <<std::endl;
 //    std::cout << tester.getFirst() << std::endl;
-    tester.insertStart(2);
-    tester.insertStart(1);
-    tester.insertEnd(3);
-    std::cout<<tester.getFirst()<< " " << tester.getAt(2) << " "<< tester.getLast() << std::endl;
-    tester.insertAt(4, 4);
-    std::cout<<tester.getAt(1)<< " " << tester.getAt(2) << " "<< tester.getAt(3) << " " << tester.getAt(4) << std::endl;
+   // tester.insertStart(2);
+    //tester.insertStart(1);
+    //tester.insertEnd(3);
+    //std::cout<<tester.getFirst()<< " " << tester.getAt(2) << " "<< tester.getLast() << std::endl;
+   // tester.insertAt(4, 4);
+  //  std::cout<<tester.getAt(1)<< " " << tester.getAt(2) << " "<< tester.getAt(3) << " " << tester.getAt(4) << std::endl;
     
-    std::cout << tester.find(4) << " " << tester.find(2) << " " << tester.find(1) << " " << tester.find(0) << " " << tester.find(3) << std::endl;
+    //std::cout << tester.find(4) << " " << tester.find(2) << " " << tester.find(1) << " " << tester.find(0) << " " << tester.find(3) << std::endl;
     
     
     
