@@ -1,21 +1,23 @@
-//
-//  Node.hpp
-//  cppLinkedList
-//
-//  Created by Zach Howes on 8/26/19.
-//  Copyright © 2019 Zach Howes. All rights reserved.
-//
+#pragma once
 
-#ifndef Node_h
-#define Node_h
+template <class T>
+class List;
 
-#include <iostream>
+//This class represents a node in a linked list
+//Do not modify anything in this file
+template <class T>
+class Node{
 
-class Node {
+ friend class List<T>;
+
+ private:
+  T value; //value stored by this node
+  Node * next; //pointer to the next node in list
+
 public:
-    Node *forwardLink;
-    Node *backwardLink;
-    int dataPoint;
-};
+ Node(T v){
+   value = v;
+   next = NULL;
+ }
 
-#endif /* Node_h */
+};
