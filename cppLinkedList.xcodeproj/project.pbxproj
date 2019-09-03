@@ -6,6 +6,10 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		49585CA7231EFF1B00BD6E5C /* tester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49585CA6231EFF1B00BD6E5C /* tester.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		49D9FE39231439050063913B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		49585CA6231EFF1B00BD6E5C /* tester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tester.cpp; sourceTree = "<group>"; };
 		49D9FE3B231439050063913B /* cppLinkedList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cppLinkedList; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FA6106231EFC9500EB109C /* ListQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListQueue.h; sourceTree = "<group>"; };
 		49FA6107231EFC9500EB109C /* ListStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListStack.h; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 				49FA6106231EFC9500EB109C /* ListQueue.h */,
 				49FA6107231EFC9500EB109C /* ListStack.h */,
 				49FA6109231EFC9500EB109C /* Node.h */,
+				49585CA6231EFF1B00BD6E5C /* tester.cpp */,
 			);
 			path = cppLinkedList;
 			sourceTree = "<group>";
@@ -121,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49585CA7231EFF1B00BD6E5C /* tester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
