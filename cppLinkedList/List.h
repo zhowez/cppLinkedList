@@ -152,7 +152,7 @@ void List<T>::insertAt(T value, int j){
     } else {
         //j is negitive or too big
         std::cout << "The index " << j
-        << "is either negitive or too big" << std::endl;
+        << " is either negitive or too big" << std::endl;
     }
 }
 
@@ -215,7 +215,7 @@ void List<T>::removeAt(int j){
         --this->mySize;
     } else {
         std::cout << "The index " << j
-        << "is either negitive or too big" << std::endl;
+        << " is either negitive or too big" << std::endl;
     }
     
 }
