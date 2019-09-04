@@ -1,9 +1,9 @@
 /*
- * Name:
- * Date Submitted:
- * Lab Section:
- * Assignment Name:
- */
+* Name: James Z. Howes
+* Date Submitted: 08/05/2019
+* Lab Section: 002
+* Assignment Name: Lab 1
+*/
 
 #pragma once
 #include "List.h"
