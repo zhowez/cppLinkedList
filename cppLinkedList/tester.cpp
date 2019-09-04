@@ -28,6 +28,7 @@ int main(){
         tester.print("Down Stack");
     }
     
+    ListStack<int> stopper;
     //List<int> tester;
 //    int num = tester.size();
 //    std::cout<< num <<std::endl;

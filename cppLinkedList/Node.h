@@ -17,7 +17,7 @@ class Node{
 public:
  Node(T v){
    value = v;
-   next = NULL;
+   next = nullptr;
  }
 
 };

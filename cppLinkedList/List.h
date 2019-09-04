@@ -58,7 +58,7 @@ public:
 template <class T>
 List<T>::List(){
     mySize = 0;
-    this->start = NULL;
+    this->start = nullptr;
 }
 
 //Destroy all nodes in this list to prevent memory leaks
@@ -66,7 +66,7 @@ template <class T>
 List<T>::~List(){
     if (this->mySize > 0){
         Node<T> *temp;
-        while (this->start != NULL) {
+        while (this->start != nullptr) {
             temp = start;
             start = start->next;
             delete temp;
@@ -115,7 +115,7 @@ void List<T>::insertEnd(T value){
         ++this->mySize;
     } else {
         Node<T> *temp = start;
-        while (temp->next != NULL){
+        while (temp->next != nullptr){
             temp = temp->next;
         }
         temp->next = new Node<T>(value);
@@ -155,7 +155,7 @@ void List<T>::removeStart(){
     
     if (this->mySize == 1){
         delete this->start;
-        start = NULL;
+        start = nullptr;
         --this->mySize;
     } else if (this->mySize > 1){
         Node<T> *deleteNode = start;
@@ -172,15 +172,15 @@ void List<T>::removeEnd(){
     
     if (this->mySize == 1){
         delete this->start;
-        start = NULL;
+        start = nullptr;
         --this->mySize;
     } else if (this->mySize > 1){
         Node<T> *temp = start;
-        while (temp->next->next != NULL) {
+        while (temp->next->next != nullptr) {
             temp = temp->next;
         }
         delete temp->next;
-        temp->next = NULL;
+        temp->next = nullptr;
         --this->mySize;
     }
 }
@@ -225,7 +225,7 @@ template <class T>
 T List<T>::getLast(){
     if (this->mySize > 0){
         Node<T> *temp = start;
-        while (temp->next != NULL){
+        while (temp->next != nullptr){
             temp = temp->next;
         }
         return temp->value;
@@ -266,7 +266,7 @@ int List<T>::find(T key){
     } else {
         int count = 1;
         Node<T> *temp = this->start;
-        while (temp->value != key && temp->next != NULL ){
+        while (temp->value != key && temp->next != nullptr ){
             temp = temp->next;
             ++count;
         }
