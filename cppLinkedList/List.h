@@ -1,8 +1,8 @@
 /*
- * Name:
- * Date Submitted:
- * Lab Section:
- * Assignment Name:
+ * Name: James Z. Howes
+ * Date Submitted: 08/05/2019
+ * Lab Section: 002
+ * Assignment Name: Lab 1
  */
 
 #pragma once
@@ -57,6 +57,7 @@ public:
 //Construct an empty list by initializig this list's instance variables
 template <class T>
 List<T>::List(){
+    
     mySize = 0;
     this->start = nullptr;
 }
@@ -64,6 +65,7 @@ List<T>::List(){
 //Destroy all nodes in this list to prevent memory leaks
 template <class T>
 List<T>::~List(){
+    
     if (this->mySize > 0){
         Node<T> *temp;
         while (this->start != nullptr) {
@@ -77,6 +79,7 @@ List<T>::~List(){
 //Return the size of this list
 template <class T>
 int List<T>::size(){
+    
     return this->mySize;
 }
 
@@ -84,6 +87,7 @@ int List<T>::size(){
 //Otherwise, return false
 template <class T>
 bool List<T>::empty(){
+    
     if (this->mySize <= 0){
         return true;
     } else {
@@ -95,6 +99,7 @@ bool List<T>::empty(){
 //into this list at start
 template <class T>
 void List<T>::insertStart(T value){
+    
     if (this->mySize == 0){
         this->start = new Node<T>(value);
         ++this->mySize;
@@ -110,6 +115,7 @@ void List<T>::insertStart(T value){
 //into this list at end
 template <class T>
 void List<T>::insertEnd(T value){
+    
     if (this->mySize == 0){
         this->start = new Node<T>(value);
         ++this->mySize;
@@ -126,14 +132,12 @@ void List<T>::insertEnd(T value){
 //Create a new node with value <value>, and insert that new node at position j
 template <class T>
 void List<T>::insertAt(T value, int j){
-    if (j > this->mySize+2){
-        //do nothing - maybe print out an error.
-    } else if (j == 1){
+    
+    if (j == 1){
         this->insertStart(value);
-    } else if (j == this->mySize + 1){
+    } else if (j == this->mySize + 1 ){
         this->insertEnd(value);
-        //what should be done if the number is larger than the size by 2 or more?
-    } else {
+    } else if (j > 1 && j < this->mySize + 1){
         int count = 1;
         Node<T> *temp = start;
         while (count < j-1){
@@ -145,6 +149,10 @@ void List<T>::insertAt(T value, int j){
         newNode->next = temp->next;
         temp->next = newNode;
         ++this->mySize;
+    } else {
+        //j is negitive or too big
+        std::cout << "The index " << j
+        << "is either negitive or too big" << std::endl;
     }
 }
 
@@ -189,6 +197,7 @@ void List<T>::removeEnd(){
 //Make no other changes to list
 template <class T>
 void List<T>::removeAt(int j){
+    
     if (j == 1){
         this->removeStart();
     } else if (j == this->mySize){
@@ -204,6 +213,9 @@ void List<T>::removeAt(int j){
         temp->next = temp->next->next;;
         delete deleteNode;
         --this->mySize;
+    } else {
+        std::cout << "The index " << j
+        << "is either negitive or too big" << std::endl;
     }
     
 }
@@ -212,6 +224,7 @@ void List<T>::removeAt(int j){
 //If no first node, return the default constructed value: T()
 template <class T>
 T List<T>::getFirst(){
+    
     if (this->mySize > 0){
         return this->start->value;
     } else {
@@ -223,6 +236,7 @@ T List<T>::getFirst(){
 //If no first node, return the default constructed value: T()
 template <class T>
 T List<T>::getLast(){
+    
     if (this->mySize > 0){
         Node<T> *temp = start;
         while (temp->next != nullptr){
@@ -238,6 +252,7 @@ T List<T>::getLast(){
 //If no first node, return the default constructed value: T()
 template <class T>
 T List<T>::getAt(int j){
+    
     if (this->mySize == 0){
         return T();
     } else if (j > this->mySize){
@@ -261,6 +276,7 @@ T List<T>::getAt(int j){
 //Otherwise, return -1
 template <class T>
 int List<T>::find(T key){
+    
     if (this->mySize == 0){
         return -1;
     } else {

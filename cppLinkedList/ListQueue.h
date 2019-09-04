@@ -46,6 +46,7 @@ ListQueue<T>::~ListQueue(){
 //Return the size of this ListQueue
 template <class T>
 int ListQueue<T>::size(){
+    
     return queue.size();
 }
 
@@ -53,6 +54,7 @@ int ListQueue<T>::size(){
 //Otherwise, return false
 template <class T>
 bool ListQueue<T>::empty(){
+    
     return queue.empty();
 }
 
@@ -60,6 +62,7 @@ bool ListQueue<T>::empty(){
 //into this ListQueue in its correct position
 template <class T>
 void ListQueue<T>::enqueue(T value){
+    
     queue.insertEnd(value);
 }
 
@@ -68,6 +71,7 @@ void ListQueue<T>::enqueue(T value){
 //AND returning the value
 template <class T>
 T ListQueue<T>::dequeue(){
+    
     T value = queue.getFirst();
     queue.removeStart();
     return value;
