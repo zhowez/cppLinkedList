@@ -26,30 +26,30 @@ int main(){
 //    tester.insertEnd(3);
 //    std::cout<<tester.getFirst()<< " " << tester.getAt(2) << " "<< tester.getLast() << std::endl;
 //    tester.insertAt(4, 4);
-    tester.insertAt("first", 1);
-    tester.insertAt("third", 2);
-    tester.insertAt("second", 2);
+    tester.insertAt("first", 0);
+    tester.insertAt("third", 1);
+    tester.insertAt("second", 1);
     tester.print("test");
-    std::cout<<tester.getAt(1)<< " " << tester.getAt(2) << " "<< tester.getAt(3) << " " << tester.getAt(4) << std::endl;
+    std::cout<<tester.getAt(0)<< " " << tester.getAt(1) << " "<< tester.getAt(2) << " " << tester.getAt(4) << std::endl;
     
     std::cout << tester.find("first") << " " << tester.find("second") << " " << tester.find("third") << " " << tester.find("butthole") << " " << tester.find("America") << std::endl;
     
     
     
-    tester.removeAt(2);
-    std::cout<<tester.getAt(1)<< " " << tester.getAt(2) << " "<< tester.getAt(3) << " " << tester.getAt(4) << std::endl;
-
-    tester.removeAt(2);
-       std::cout<<tester.getAt(1)<< " " << tester.getAt(2) << " "<< tester.getAt(3) << " " << tester.getAt(4) << std::endl;
-
-    tester.removeAt(5);
-       std::cout<<tester.getAt(1)<< " " << tester.getAt(2) << " "<< tester.getAt(3) << " " << tester.getAt(4) << std::endl;
-
-    tester.removeAt(2);
-       std::cout<<tester.getAt(1)<< " " << tester.getAt(2) << " "<< tester.getAt(3) << " " << tester.getAt(4) << std::endl;
+    tester.removeAt(1);
+    std::cout<<tester.getAt(0)<< " " << tester.getAt(1) << " "<< tester.getAt(2) << " " << tester.getAt(4) << std::endl;
 
     tester.removeAt(1);
-       std::cout<<tester.getAt(1)<< " " << tester.getAt(2) << " "<< tester.getAt(3) << " " << tester.getAt(4) << std::endl;
+       std::cout<<tester.getAt(0)<< " " << tester.getAt(1) << " "<< tester.getAt(2) << " " << tester.getAt(4) << std::endl;
+
+    tester.removeAt(4);
+       std::cout<<tester.getAt(0)<< " " << tester.getAt(1) << " "<< tester.getAt(2) << " " << tester.getAt(4) << std::endl;
+
+    tester.removeAt(1);
+       std::cout<<tester.getAt(0)<< " " << tester.getAt(1) << " "<< tester.getAt(2) << " " << tester.getAt(3) << std::endl;
+
+    tester.removeAt(0);
+       std::cout<<tester.getAt(0)<< " " << tester.getAt(1) << " "<< tester.getAt(2) << " " << tester.getAt(3) << std::endl;
     
     tester.print("test");
     return 0;

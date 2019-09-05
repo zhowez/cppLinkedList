@@ -74,6 +74,7 @@ List<T>::~List(){
             delete temp;
         }
     }
+    start = nullptr;
 }
 
 //Return the size of this list
@@ -133,12 +134,12 @@ void List<T>::insertEnd(T value){
 template <class T>
 void List<T>::insertAt(T value, int j){
     
-    if (j == 1){
+    if (j == 0){
         this->insertStart(value);
-    } else if (j == this->mySize + 1 ){
+    } else if (j == this->mySize){
         this->insertEnd(value);
-    } else if (j > 1 && j < this->mySize + 1){
-        int count = 1;
+    } else if (j > 0 && j < this->mySize){
+        int count = 0;
         Node<T> *temp = start;
         while (count < j-1){
             temp = temp->next;
@@ -198,12 +199,12 @@ void List<T>::removeEnd(){
 template <class T>
 void List<T>::removeAt(int j){
     
-    if (j == 1){
+    if (j == 0){
         this->removeStart();
     } else if (j == this->mySize){
         this->removeEnd();
     } else if (j > 0 && j < this->mySize) {
-        int count = 1;
+        int count = 0;
         Node<T> *temp = start;
         while (count < j-1){
             temp = temp->next;
@@ -255,14 +256,14 @@ T List<T>::getAt(int j){
     
     if (this->mySize == 0){
         return T();
-    } else if (j > this->mySize){
+    } else if (j >= this->mySize){
         return T();
-    } else if (j == 1){
+    } else if (j == 0){
         return this->getFirst();
-    } else if (j == this->mySize){
+    } else if (j == this->mySize-1){
         return this->getLast();
     } else {
-        int count = 1;
+        int count = 0;
         Node<T> *temp = start;
         while (count < j){
             temp = temp->next;
@@ -280,7 +281,7 @@ int List<T>::find(T key){
     if (this->mySize == 0){
         return -1;
     } else {
-        int count = 1;
+        int count = 0;
         Node<T> *temp = this->start;
         while (temp->value != key && temp->next != nullptr ){
             temp = temp->next;
